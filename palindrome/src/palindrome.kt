@@ -52,10 +52,10 @@ fun isPalindrome( stringToCheck: String ) : Boolean {
 
 fun main( args: Array<String> ) {
     //My strings array to check
-    val myStrings = arrayOf( "Rotor", "aNnA", "step on no pets", "Kotlin", "121", "Xanax", "1 xanax 1", "1 xanax 2" )
+    val myStrings = arrayOf( "Rotor", "RotoR", "aNnA", "anna", "step on no pets", "Kotlin", "121", "Xanax", "xanax", "1 xanax 1", "1 xanax 2" )
 
     for ( oneString in myStrings ) {
-        println("'$oneString' is ${ if ( isPalindrome( oneString ) ) "a" else "not a" }  palindrome" )
+        println("'$oneString' is ${ if ( isPalindrome( oneString ) ) "" else "not " }  palindrome" )
     }
     println()
 }
